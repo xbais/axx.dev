@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AXX.dev</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #000000, #1a1a1a);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 8rem;
+      font-weight: 900;
+      letter-spacing: 0.4rem;
+      background: linear-gradient(90deg, #ff4d4d, #ffb84d, #4dff4d, #4db8ff, #b44dff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300%;
+      animation: gradientMove 6s ease infinite;
+      font-family: "Arial Black", sans-serif;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .subtitle {
+      color: #cccccc;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      letter-spacing: 0.15rem;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 4rem;
+      }
+      .subtitle {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">AXX</div>
+    <div class="subtitle">Developer · Builder · Creator</div>
+  </div>
+</body>
+</html>
